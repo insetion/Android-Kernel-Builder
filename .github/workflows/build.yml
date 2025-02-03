@@ -50,10 +50,10 @@ jobs:
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
     steps:
-      - name: "🖥️ Setup/Start tmate SSH session"
-        uses: mxschmitt/action-tmate@v3.18
-        with:
-          detached: true
+     # - name: "🖥️ Setup/Start tmate SSH session"
+      #  uses: mxschmitt/action-tmate@v3.18
+       # with:
+         # detached: true
 
       - name: "✨ Create working dir"
         run: mkdir -p $kernelDir
@@ -61,7 +61,7 @@ jobs:
       - name: "⭐ Install prerequisites"
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential bc curl git zip ftp gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev lftp zstd wget libfl-dev python2 python3 libarchive-tools device-tree-compiler zsh
+          sudo apt-get install -y build-essential bc curl git zip ftp gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev lftp zstd wget libfl-dev python3 libarchive-tools device-tree-compiler zsh
 
       - name: "🌟 Clone kernel source => (${{ env.kernelRepo }})"
         working-directory: ./${{ env.kernelDir }}
