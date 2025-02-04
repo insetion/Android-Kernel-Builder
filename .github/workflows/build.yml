@@ -240,9 +240,10 @@ jobs:
            ${{ env.kernelDir }}/${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img
            ${{ env.kernelDir }}/${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image.gz
            ${{ env.kernelDir }}/${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/Image
-          name: ${{ env.kernelName }}_2025
+           ${{ env.kernelDir }}/${{ env.ANYKERNEL_NAME }}/AnyKernel3-(${{ env.kernelDevice }}-${{ env.kernelName }}-${{ env.kernelBranch }}).zip
+          name: ${{ env.kernelName }}_test
           tag_name: rel_${{ github.run_id }}
           body: |
-           Release
+           test
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
