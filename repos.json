@@ -1,14 +1,14 @@
 [  {
     "kernelSource": {
-      "name": "Q-C15",
-      "repo": "https://github.com/nurfinzmuhamad14/android_kernel_realme_RMX2195.git",
-      "branch": "lineage-17",
+      "name": "Queen",
+      "repo": "https://github.com/insetion/RMX2195_AndroidQ-kernel-source.git",
+      "branch": "test",
       "device": "RMX2195"
     },
     "anykernelSource": {
-        "repo": "https://github.com/1ndev-ui/AnyKernel3",
-        "branch": "dev",
-        "name": "AnyKernel3"
+        "repo": "https://github.com/insetion/AnyKernel3",
+        "branch": "RMX2195",
+        "name": "Queen"
     },
     "withKernelSU": false,
     "toolchains": [
