@@ -2,13 +2,13 @@
     "kernelSource": {
       "name": "Queen",
       "repo": "https://github.com/insetion/RMX2195_AndroidQ-kernel-source.git",
-      "branch": "test",
+      "branch": "udyneos",
       "device": "RMX2195"
     },
     "anykernelSource": {
         "repo": "https://github.com/insetion/AnyKernel3",
         "branch": "RMX2195",
-        "name": "Queen"
+        "name": "Queenkernel"
     },
     "withKernelSU": false,
     "toolchains": [
