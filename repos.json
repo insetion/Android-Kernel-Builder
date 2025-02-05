@@ -1,7 +1,7 @@
 [  {
     "kernelSource": {
       "name": "Queen",
-      "repo": "https://github.com/insetion/RMX2195_AndroidQ-kernel-source.git",
+      "repo": "https://github.com/F1s-Mod/RMX2195_AndroidQ-kernel-source.git",
       "branch": "udyneos",
       "device": "RMX2195"
     },
