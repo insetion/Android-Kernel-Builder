@@ -1,6 +1,6 @@
 [  {
     "kernelSource": {
-      "name": "Strombreaker-ACK",
+      "name": "test-ACK",
       "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-C15.git",
       "branch": "rebase-4.19",
       "device": "RMX2195"
