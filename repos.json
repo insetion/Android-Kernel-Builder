@@ -1,14 +1,14 @@
 [  {
     "kernelSource": {
       "name": "Queen",
-      "repo": "https://github.com/F1s-Mod/kernel-source.git",
-      "branch": "test",
+      "repo": "https://github.com/nurfinzmuhamad14/android_kernel_realme_RMX2195",
+      "branch": "Queen",
       "device": "RMX2195"
     },
     "anykernelSource": {
         "repo": "https://github.com/insetion/AnyKernel3",
         "branch": "RMX2195",
-        "name": "Queenkernel"
+        "name": "Queenbeta"
     },
     "withKernelSU": false,
     "toolchains": [
