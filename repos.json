@@ -1,8 +1,8 @@
 [  {
     "kernelSource": {
-      "name": "StromBreaker",
-      "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-C15.git",
-      "branch": "test",
+      "name": "Skywalker",
+      "repo": "https://github.com/nurfinzmuhamad14/kernel_realme_RMX2195",
+      "branch": "4.19.157",
       "device": "RMX2195"
     },
     "anykernelSource": {
