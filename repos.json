@@ -1,14 +1,14 @@
 [  {
     "kernelSource": {
-      "name": "StromBreaker",
-      "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-C15.git",
-      "branch": "backup",
+      "name": "Strombreakerv0.3",
+      "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-prjkt.git",
+      "branch": "v0.3",
       "device": "RMX2195"
     },
     "anykernelSource": {
         "repo": "https://github.com/insetion/AnyKernel3",
         "branch": "RMX2195",
-        "name": "Unofficial"
+        "name": "Update"
     },
     "withKernelSU": false,
     "toolchains": [
