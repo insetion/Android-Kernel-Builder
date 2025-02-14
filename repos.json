@@ -1,14 +1,14 @@
 [  {
     "kernelSource": {
-      "name": "Queen",
-      "repo": "https://github.com/F1s-Mod/kernel-source.git",
-      "branch": "test",
+      "name": "Skywalker",
+      "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-prjkt.git",
+      "branch": "lineage-20",
       "device": "RMX2195"
     },
     "anykernelSource": {
         "repo": "https://github.com/insetion/AnyKernel3",
         "branch": "RMX2195",
-        "name": "Queenkernel"
+        "name": "Skywalkerz"
     },
     "withKernelSU": false,
     "toolchains": [
