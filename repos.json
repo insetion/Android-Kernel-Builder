@@ -1,14 +1,14 @@
 [  {
     "kernelSource": {
-      "name": "Skywalker",
-      "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-prjkt.git",
-      "branch": "v0.3",
+      "name": "QStrom",
+      "repo": "https://github.com/nurfinzmuhamad14/device_kernel_RMX2195.git",
+      "branch": "Q-v0.1",
       "device": "RMX2195"
     },
     "anykernelSource": {
         "repo": "https://github.com/insetion/AnyKernel3",
         "branch": "RMX2195",
-        "name": "Skywalkerz"
+        "name": "QStrom"
     },
     "withKernelSU": false,
     "toolchains": [
