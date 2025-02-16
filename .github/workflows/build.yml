@@ -163,6 +163,9 @@ jobs:
         run: |
           echo "PATH Variable: $PATH"
           make ${args} CONFIG_DEBUG_SECTION_MISMATCH=y
+          if [[ -f $OUT_DIR/arch/$ARCH/boot/Image ]]; then
+            bash build.sh
+          fi
 
       - name: "📦 Package kernel with AnyKernel3"
         working-directory: ./${{ env.kernelDir }}
