@@ -2,7 +2,7 @@
     "kernelSource": {
       "name": "Skywalker",
       "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-prjkt.git",
-      "branch": "lineage-20",
+      "branch": "v0.3",
       "device": "RMX2195"
     },
     "anykernelSource": {
