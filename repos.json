@@ -1,14 +1,14 @@
 [  {
     "kernelSource": {
-      "name": "Skywalker",
-      "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-prjkt.git",
-      "branch": "v0.3",
+      "name": "SkywalkerX",
+      "repo": " https://github.com/nurfinzmuhamad14/kernel_realme_sm4250.git",
+      "branch": "Stable-v0.4",
       "device": "RMX2195"
     },
     "anykernelSource": {
         "repo": "https://github.com/insetion/AnyKernel3",
         "branch": "RMX2195",
-        "name": "Skywalkerz"
+        "name": "SkywalkerX+"
     },
     "withKernelSU": false,
     "toolchains": [
