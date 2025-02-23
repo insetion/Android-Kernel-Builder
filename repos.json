@@ -2,7 +2,7 @@
     "kernelSource": {
       "name": "Strombreakerv0.3",
       "repo": "https://github.com/nurfinzmuhamad14/Strombreaker-prjkt.git",
-      "branch": "v0.3",
+      "branch": "Stable-v0.3",
       "device": "RMX2195"
     },
     "anykernelSource": {
