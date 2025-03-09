@@ -54,6 +54,9 @@ jobs:
       #  uses: mxschmitt/action-tmate@v3.18
        # with:
          # detached: true
+      - name: "Add hosts to /etc/hosts"
+        run: |
+         sudo echo "127.0.0.1 UdyneOS.prjkt" | sudo tee -a /etc/hosts
 
       - name: "✨ Create working dir"
         run: |
@@ -66,14 +69,6 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential bc curl git zip ftp gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev lftp zstd wget libfl-dev python3 libarchive-tools device-tree-compiler zsh
 
-      - name: "🌟 Clone Vendor source => (${{ env.kernelRepo }})"
-        working-directory: ./${{ env.kernelDir }}
-        run: |
-          cd ..
-          git clone https://github.com/UdyneO2/realme_vendor_qcom.git tmp
-          mv tmp/source/android/kernel kernel
-          mv tmp/source/android/vendor vendor
-          
       - name: "🌟 Clone kernel source => (${{ env.kernelRepo }})"
         working-directory: ./${{ env.kernelDir }}
         run: |
