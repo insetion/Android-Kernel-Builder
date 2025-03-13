@@ -50,6 +50,16 @@ jobs:
 
       withKernelSU: ${{ matrix.repos.withKernelSU }}
     steps:
+      - name: send telegram message on push
+        uses: appleboy/telegram-action@master
+        with:
+           to: ${{ secrets.CHAT_ID }}
+           token: ${{ secrets.BOT_TOKEN }}
+           message: |
+              ${{ github.actor }} created commit:
+              Commit message: ${{ github.event.commits[0].message }}
+              Repository: ${{ github.repository }}
+              See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
      # - name: "🖥️ Setup/Start tmate SSH session"
       #  uses: mxschmitt/action-tmate@v3.18
        # with:
@@ -188,7 +198,7 @@ jobs:
           cd $ANYKERNEL_NAME
           zip -r9 SkywalkerX-AnyKernel3.zip * -x .git README.md *placeholder
           mkdir ../upload
-          cp SkywalkerX-AnyKernel3.zip ../upload/
+          mv SkywalkerX-AnyKernel3.zip ../upload/
           ls ../upload
 
       - name: "🖤 Upload AnyKernel3 package"
@@ -234,7 +244,7 @@ jobs:
         with:
           bot_token: ${{ secrets.BOT_TOKEN }}
           chat_id: ${{ secrets.CHAT_ID }}
-          context: "An example"
+          context: "Update Kernel SkyWalkerX"
           path: ./${{ env.kernelDir }}/upload/*.zip # Total size does not exceed 50M
           parse_mode: None # Optional
           method: sendFile
