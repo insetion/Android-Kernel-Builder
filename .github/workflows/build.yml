@@ -154,6 +154,8 @@ jobs:
           args: ${{ steps.generate-args.outputs.args }}
         run: |
           echo "PATH Variable: $PATH"
+          export KBUILD_BUILD_HOST=Ubuntu-Github
+          export KBUILD_BUILD_USER=UdyneOS
           make ${{ env.args }} ${{ env.DEFCONFIG_NAME }}
 
       - name: "🎶 Build kernel"
@@ -183,6 +185,11 @@ jobs:
           if [ -f $OUT_DIR/arch/$ARCH/boot/dtbo.img ]; then
             cp $OUT_DIR/arch/$ARCH/boot/dtbo.img $ANYKERNEL_NAME/dtbo.img
           fi
+          cd $ANYKERNEL_NAME
+          zip -r9 SkywalkerX-AnyKernel3.zip * -x .git README.md *placeholder
+          mkdir ../upload
+          cp SkywalkerX-AnyKernel3.zip ../upload/
+          ls ../upload
 
       - name: "🖤 Upload AnyKernel3 package"
         uses: actions/upload-artifact@v4
@@ -221,3 +228,13 @@ jobs:
           path: ./${{ env.kernelDir }}/${{ env.OUT_DIR }}/arch/${{ env.ARCH }}/boot/dtbo.img
           if-no-files-found: ignore
           retention-days: 7
+
+      - name: Channel Post
+        uses: xireiki/channel-post@v1.0.10
+        with:
+          bot_token: ${{ secrets.BOT_TOKEN }}
+          chat_id: ${{ secrets.CHAT_ID }}
+          context: "An example"
+          path: ./${{ env.kernelDir }}/upload/*.zip # Total size does not exceed 50M
+          parse_mode: None # Optional
+          method: sendFile
