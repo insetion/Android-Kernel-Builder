@@ -3,7 +3,7 @@
       "name": "Skywalker",
       "repo": "https://github.com/insetion/kernel_realme_sm4250",
       "branch": "stable",
-      "device": "RMX2195"
+      "device": "stock_defconfig"
     },
     "anykernelSource": {
         "repo": "https://github.com/insetion/AnyKernel3",
